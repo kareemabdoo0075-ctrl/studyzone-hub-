@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyZone | الرئيسية</title>
+    <style>
+        :root {
+            --main-color: #1e3c72;
+            --accent-color: #2a5298;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header { text-align: center; padding: 30px 10px; background: linear-gradient(135deg, var(--main-color), var(--accent-color)); color: white; border-radius: 12px; margin-bottom: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+        .card { background-color: var(--card-bg); border-radius: 10px; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); text-align: center; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--main-color); margin-top: 0; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: var(--main-color); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn:hover { background-color: var(--accent-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>منصة StudyZone التعليمية</h1>
+            <p>اختر القسم المطلوب للوصول للكتب والملفات الدراسية</p>
+        </header>
+        <div class="grid">
+            <div class="card">
+                <h3>الصف الأول الإعدادي</h3>
+                <p>جميع المواد الدراسية: عربي، رياضيات، علوم، دراسات، إنجليزي، و حاسب آلي.</p>
+                <a href="pages/prep-1/index.html" class="btn">دخول القسم</a>
+            </div>
+            <div class="card">
+                <h3>مركز اللغات</h3>
+                <p>مكتبة لـ 10 لغات عالمية تحتوي على كتب القواعد والمعاجم والملفات.</p>
+                <a href="pages/languages/index.html" class="btn">دخول القسم</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
